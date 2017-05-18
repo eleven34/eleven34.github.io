@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Cantarell');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cantarell', sans-serif;  
+}
+
+ul {
+  margin-left: 4vw;
+}
+
+.paper {
+  box-sizing: border-box;
+  width: 8.5in;  
+  border: 1px solid #333;
+  margin: 2vw auto;
+  padding: 1in;
+}
+
+.flexDiv {
+  display: flex;
+}
+
+.centered {
+  text-align: center;
+}
+
+.sideBar {
+  width: 30%;    
+}
+
+.sideBar p {
+  text-transform: uppercase;
+}
+
+.myName {
+  font-size: 3.6rem;
+}
+
+.myName
+, .job
+, .education {
+  margin-bottom: 4vw;
+}
+
+.contactInfo a {
+  text-decoration: none;
+}
+
+.meat {
+  width: 70%;
+  padding-left: 2vw;
+  margin-bottom: 4vw;
+  border-left: 2px solid #333;  
+}
+
+.left
+, .right {
+  width: 50%;
+}
+
+.company
+, .school {
+  font-weight: bold;
+}
+
+.timeSpan {
+  font-size: 0.8rem;
+}
+
+.position
+, .course {
+  text-decoration: underline;
+}
