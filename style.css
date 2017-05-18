@@ -1,0 +1,317 @@
+/*general css*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #34495e;
+	color: #ecf0f1;
+	font-family: Karma;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-family: Source Serif Pro;
+	line-height: 1.000;
+	font-size: 4vw;
+	font-weight: 700;
+	color: #e67e22;
+}
+
+h2 {
+	font-family: Source Serif Pro;
+	line-height: 1.375;
+	font-size: 1.9vw;
+}
+
+p {	font-size: 1.6vw; }
+
+a { 
+	color: #3498db;
+	text-decoration: none;
+	font-weight: 900;
+	text-shadow: 0.15vw 0.15vw rgba(0, 0, 0, 0.4);
+}
+
+/*divs and other fun stuff*/
+#first {
+	background: url("ewTake3.png") no-repeat;
+	background-position: center;
+	/*background-size: cover;*/
+}
+
+#welcome {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 42vw;
+	height: 38vh;
+	margin: 0 auto;
+}
+
+/*---blown-up bg imgs---*/
+#exi { background: url("exiBG.jpg");  background-size: cover; }
+#drh { background: url("drhBG.jpg");  background-size: cover; }
+#prm { background: url("prmBG.jpg");  background-size: cover; }
+#dim { background: url("dimgBG.jpg"); background-size: cover; }
+#bcc { background: url("bccBG.jpg");  background-size: cover; }
+#assess { background: url("assessBG.jpg"); background-size: cover; }
+
+.siteList li{
+    list-style-type: none;
+    font-size: 1.6vw;
+    padding-left: 2vw;
+}
+
+/*as you were*/
+.job {
+	width: 100vw;
+	height: 100vh;
+}
+
+.content {
+	width: 80vw;
+	height: 60vh;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	box-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+}
+
+.parag {
+	width: 45vw;
+	height: 60vh;
+	background: rgba(127, 140, 141, 0.6);
+}
+.parag h1, h2 { 
+	text-align: right;
+	padding: 0.6vh 0.8vw;
+}
+.parag h2 { background: rgba(0, 0, 0, 0.4); }
+
+.parag p {
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+.pic {
+	width: 35vw;
+	height: 60vh;
+}
+
+/*---regular pics---*/
+#exi .pic { background: rgba(0, 0, 0, 0.6) url("exMAIN.jpg") center center no-repeat;
+			background-size: 100%;
+}
+#drh .pic { background: rgba(0, 0, 0, 0.6) url("drMAIN.jpg") center center no-repeat;
+			background-size: 100%;
+}
+#prm .pic { background: rgba(0, 0, 0, 0.6) url("pmMAIN.jpg") center center no-repeat;
+			background-size: 100%;
+}
+#dim .pic { background: rgba(0, 0, 0, 0.6) url("diMAIN.jpg") center center no-repeat;
+			background-size: 100%;
+}
+#bcc .pic { background: rgba(0, 0, 0, 0.6) url("bcMAIN.jpg") center center no-repeat;
+			background-size: 100%;
+}
+#assess .pic { background: rgba(0, 0, 0, 0.6) url("assessMAIN.jpg") center center no-repeat;
+			background-size: 100%;
+}
+/*carry on*/
+.right { float: right; }
+.left { float: left; }
+
+/*this is the footer's css*/
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 10vh;
+	background: #3498db;
+}
+
+footer ul {
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer ul li {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	margin-left: 4vw;
+	text-align: center;
+}
+
+footer a {
+	background: #e74c3c;
+	background: url("spritesheet3.png");
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0.1vw 0.1vw rgba(0, 0, 0, 0.2);
+}
+
+footer a:hover {
+	transform: scale(1.08);
+}
+
+/*spritesheet yo*/
+#top { 
+	background-position: 100% 0;
+	border: solid 0.6vh #e67e22;
+ }
+#top:hover { background-position: 100% 100%; }
+
+#assess2 { background-position: 0 0; }
+#assess2:hover { background-position: 0 100%; }
+
+#exi2 { background-position: 600px 0;  }
+#exi2:hover { background-position: 600px 100%; }
+
+#drh2 { background-position: 500px 0; }
+#drh2:hover { background-position: 	500px 100%; }
+
+#prm2 { background-position: 400px 0;  }
+#prm2:hover { background-position: 400px 100%; }
+
+#dim2 { background-position: 300px 0; }
+#dim2:hover { background-position: 300px 100%; }
+
+#bcc2 { background-position: 200px 0;  }
+#bcc2:hover { background-position: 200px 100%; }
+
+/*hey look everyone, it's MEDIA QUERIES, how fancy*/
+@media screen and (max-width: 980px) {
+	footer ul li {
+		width: 50px;
+		height: 50px;
+		margin-left: 2vw;
+	}
+
+	footer a {
+		width: 50px;
+		height: 50px;
+	}
+
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 4.1vw;
+		font-weight: 700;
+		color: #e67e22;
+	}
+
+	h2 { font-size: 3vw; }
+
+	p {	font-size: 2.5vw; }
+	a { text-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.6); }
+    
+    .siteList li {
+        font-size: 2.6vw;
+    }
+    
+    footer ul {
+        width: 100%;
+    }
+    
+    footer ul li {
+        width: 64px;
+        height: 64px;
+        margin-left: 5vw;
+    }
+    
+	footer a {
+		width: 64px;
+		height: 64px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h1 { font-size: 5.2vw; }
+	h2 { font-size: 3.9vw; }
+	p {	font-size: 3.8vw; }
+	a { text-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.6); }
+	
+	#welcome { width: 80vw; }
+	
+	.content { height: 80vh; }
+
+	.right { float: none; }
+	.left { float: none; }
+
+	.parag {
+		width: 80vw;
+		height: 45vh;
+	}
+
+    .siteList li{
+        list-style-type: none;
+        font-size: 4vw;
+        padding-left: 2vw;
+    }
+    
+	.pic {
+		width: 80vw;
+		height: 35vh;
+	}
+
+	li {
+		width: 32px;
+		height: 32px;
+		margin-left: 1vw;
+	}
+	
+	footer {
+		height: 6vh;
+	}
+    
+    footer ul {
+        width: 80%;
+    }
+    
+    footer ul li {
+        width: 32px;
+        height: 32px;
+        margin-left: 6px;
+    }
+    
+	footer a {
+		width: 32px;
+		height: 32px;
+        background: #e74c3c;
+	    background: url("spritesheetMini.png");
+	}
+    
+    #top { 
+	    background-position: 96px 0;
+	    border: solid 0.5vh #e67e22;
+    }
+    #top:hover { background-position: 96px 0; }
+    
+    #assess2 { background-position: 32px 0; }
+    #assess2:hover { background-position: 32px 0; }
+
+    #exi2 { background-position: 192px 0;  }
+    #exi2:hover { background-position: 192px 0; }
+
+    #drh2 { background-position: 160px 0; }
+    #drh2:hover { background-position: 160px 0; }
+
+    #prm2 { background-position: 128px 0;  }
+    #prm2:hover { background-position: 128px 0; }
+
+    #dim2 { background-position: 160px 0; }
+    #dim2:hover { background-position: 160px 0; }
+
+    #bcc2 { background-position: 64px 0;  }
+    #bcc2:hover { background-position: 64px 0; }
+
+}
