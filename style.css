@@ -101,6 +101,12 @@ a {
 	height: 60vh;
 }
 
+#assess p a {
+    text-decoration: line-through;
+    color: #ccd5db;
+    pointer-events: none;
+}
+
 /*---regular pics---*/
 #exi .pic { background: rgba(0, 0, 0, 0.6) url("exMAIN.jpg") center center no-repeat;
 			background-size: 100%;
