@@ -7,21 +7,20 @@
 body {
 	background: #34495e;
 	color: #ecf0f1;
-	font-family: Karma;
+	font-family: Karma, serif;
 	overflow-x: hidden;
+	line-height: 1.4;
 }
 
 h1 {
-	font-family: Source Serif Pro;
-	line-height: 1.000;
+	font-family: Source Serif Pro, serif;	
 	font-size: 4vw;
 	font-weight: 700;
 	color: #e67e22;
 }
 
 h2 {
-	font-family: Source Serif Pro;
-	line-height: 1.375;
+	font-family: Source Serif Pro, serif;
 	font-size: 1.9vw;
 }
 
@@ -39,15 +38,16 @@ a {
 	background: url("ewTake3.png") no-repeat;
 	background-position: center;
 	/*background-size: cover;*/
+	position: relative;
 }
 
 #welcome {
-	position: relative;
+	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	left: 50%
+	transform: translate(-50%, -50%);
 	width: 42vw;
-	height: 38vh;
-	margin: 0 auto;
+	height: 38vh;	
 }
 
 /*---blown-up bg imgs---*/
@@ -71,6 +71,7 @@ a {
 }
 
 .content {
+	display: flex;
 	width: 80vw;
 	height: 60vh;
 	margin: 0 auto;
@@ -126,9 +127,6 @@ a {
 #assess .pic { background: rgba(0, 0, 0, 0.6) url("assessMAIN.jpg") center center no-repeat;
 			background-size: 100%;
 }
-/*carry on*/
-.right { float: right; }
-.left { float: left; }
 
 /*this is the footer's css*/
 footer {
@@ -145,8 +143,6 @@ footer ul {
 }
 
 footer ul li {
-	position: relative;
-	top: 50%;
 	transform: translateY(-50%);
 	width: 100px;
 	height: 100px;
@@ -155,10 +151,14 @@ footer ul li {
 	text-align: center;
 }
 
+footer ul li:first-child {
+    margin-left: 0;
+}
+
 footer a {
 	background: #e74c3c;
 	background: url("spritesheet3.png");
-	display: inline-block;
+	display: block;
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -241,20 +241,20 @@ footer a:hover {
 }
 
 @media screen and (max-width: 480px) {
-	h1 { font-size: 5.2vw; }
-	h2 { font-size: 3.9vw; }
-	p {	font-size: 3.8vw; }
+	h1 { font-size: 10.2vw; }
+	h2 { font-size: 5.9vw; }
+	p {	font-size: 4.8vw; }
 	a { text-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.6); }
 	
 	#welcome { width: 80vw; }
 	
-	.content { height: 80vh; }
-
-	.right { float: none; }
-	.left { float: none; }
+	.content { 
+		height: 94%;
+		flex-direction: column;
+	}
 
 	.parag {
-		width: 80vw;
+		width: 100%;
 		height: 45vh;
 	}
 
@@ -265,7 +265,7 @@ footer a:hover {
     }
     
 	.pic {
-		width: 80vw;
+		width: 100%;
 		height: 35vh;
 	}
 
@@ -278,15 +278,11 @@ footer a:hover {
 	footer {
 		height: 6vh;
 	}
-    
-    footer ul {
-        width: 80%;
-    }
-    
+        
     footer ul li {
         width: 32px;
         height: 32px;
-        margin-left: 6px;
+        margin-left: 4vw;
     }
     
 	footer a {
