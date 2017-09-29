@@ -218,7 +218,7 @@ footer a:hover {
 	h2 { font-size: 3vw; }
 
 	p {	font-size: 2.5vw; }
-	a { text-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.6); }
+	a { text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(0, 0, 0, 0.4); }
     
     .siteList li {
         font-size: 2.6vw;
@@ -244,7 +244,7 @@ footer a:hover {
 	h1 { font-size: 10.2vw; }
 	h2 { font-size: 5.9vw; }
 	p {	font-size: 4.8vw; }
-	a { text-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.6); }
+	a { text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(0, 0, 0, 0.4); }
 	
 	#welcome { width: 80vw; }
 	
