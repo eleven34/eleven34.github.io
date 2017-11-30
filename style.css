@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+:root {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: #34495e;
 	color: #ecf0f1;
