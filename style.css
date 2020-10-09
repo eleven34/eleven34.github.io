@@ -606,8 +606,8 @@ body:before {
   margin-right: 2vw;  
 }
 
-.underline {
-  text-decoration: underline;
+.question-link {
+  color: #fff;
   font-weight: bold;
 }
 
