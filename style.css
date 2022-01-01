@@ -32,10 +32,10 @@ body:before {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  background: radial-gradient(ellipse at top, #CAF5EB, transparent),
-              radial-gradient(ellipse at bottom, #BD9FF5, transparent),
-              radial-gradient(ellipse at left, #BD9FF5, #2DC49B),
-              radial-gradient(ellipse at right, #CAF5EB, transparent);
+  background: radial-gradient(ellipse at top, #caf5eb, transparent),
+              radial-gradient(ellipse at bottom, #bd9ff5, transparent),
+              radial-gradient(ellipse at left, #bd9ff5, #2dc49b),
+              radial-gradient(ellipse at right, #caf5eb, transparent);
   z-index: -100;
 }
 
@@ -49,11 +49,18 @@ body:before {
   width: 92vw;
   font-size: 3rem;
   line-height: 1.1;
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
   padding: 2vw;
   margin: auto;
-  background: rgba(217, 120, 40, 1);
+  background: #d97828;
+  color: #fff;
+  padding: 2vw;  
+  padding-right: 3vw;  
+  border: 1vw solid #0189bb;    
+  box-shadow: 10px 10px 10px -8px rgb(0 0 0 / 50%),
+              inset 4px 4px 0 0 #e102a8, 
+              inset -4px -4px 0 0 #e102a8;
 }
 
 .rotate-message a {
@@ -95,13 +102,11 @@ body:before {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* background: url('https://cf.geekdo-images.com/imagepagezoom/img/lMkX55kTpZWU5WUz7GsINW_VNAE=/fit-in/1200x900/filters:no_upscale()/pic1090355.jpg'); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   transform-origin: 50% 10%;  
-  transform-style: preserve-3d;
-  /* transform: scale(0.3); */
+  transform-style: preserve-3d;  
   will-change: transform;
 }
 
@@ -437,23 +442,6 @@ body:before {
   backface-visibility: hidden;
 }
 
-/*
-.board:before {  
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #bb6019;
-  background: #d97828;
-  top: 0;
-  left: 0;
-  border-radius: 6px;  
-  transform: rotateY(180deg);
-  backface-visibility: visible;
-  z-index: 1;
-}
-*/
-
 .board:after {
   content: '';
   position: absolute;
@@ -497,11 +485,14 @@ body:before {
 .board-blurb {
   position: relative;
   max-width: 80%;
-  background: #6be3c2;  
+  color: #fff;
+  background: linear-gradient(157deg, #0189bb 91%, #e102a8 91%);  
   padding: 2vw;  
   padding-right: 3vw;  
   border: 1vw solid #e9f259;    
-  box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.5); 
+  box-shadow: 10px 10px 10px -8px rgb(0 0 0 / 50%),
+              inset 4px 4px 2px 0 #e102a8, 
+              inset -4px -4px 2px 0 #e102a8;
   z-index: 60;
 }
 
@@ -519,6 +510,12 @@ body:before {
 
 .client-list {
   font-size: 0.8rem;  
+}
+
+.mainline {
+  background: url('assets/mainlinebg.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .citi {
@@ -606,8 +603,8 @@ body:before {
   margin-right: 2vw;  
 }
 
-.question-link {
-  color: #fff;
+.underline {
+  text-decoration: underline;
   font-weight: bold;
 }
 
