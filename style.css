@@ -7,12 +7,13 @@
 }
 
 :root {
+  --q-translate: 85%, -50%;
   font-family: sans-serif;
   font-size: 2.4vw;
   line-height: 2.8vw;
 }
 
-body {    
+body {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -508,6 +509,12 @@ body:before {
   font-size: 0.8rem;
 }
 
+.nymbl {
+  background: url('assets/nymbl.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .nuvalence {
   background: url('assets/nuvalencebg.png');
   background-size: cover;
@@ -568,13 +575,14 @@ body:before {
 
 /*START Question mark slider*/
 .question-mark-container {
+  
   position: fixed;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   top: 50%;
   right: 0;
-  transform: translate(85%, -50%);    
+  transform: translate(var(--q-translate));
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   padding-right: 2vw;
@@ -588,8 +596,8 @@ body:before {
 
 .question-mark-container:hover
 , .question-mark-container:focus {
-  transform: translate(0, -50%);  
-  transition: transform 0.4s ease-in-out;  
+  --q-translate: 0, -50%;
+  transition: transform 0.4s ease-in-out;
 }
 
 .question-mark {
@@ -614,7 +622,7 @@ body:before {
   0%, 10% {
     transform: rotate(0deg);
   }
-  
+
   90%, 100% {
     transform: rotate(90deg);
   }
@@ -624,15 +632,56 @@ body:before {
 @media screen and (max-width: 762px) {
   body {
     max-height: 100vh;
-    overflow-y: hidden;
+    overflow-y: auto;
   }
 
-  .rotate-message {
-    display: block;
+  .cassette {
+    position: relative;
+    width: 95vw;
+    height: 60vw;
+    background: rgba(217, 120, 40, 1);
+    /* background: rgba(40, 120, 217, 0.4); */
+    border-radius: 2vw;
+    z-index: 6;
   }
-  
-  .zoom-container
-  , .question-mark-container {
-    display: none;
+
+  .sticker {
+    top: 10vw;
+    width: 82.5vw;
+    height: 35vw;
+  }
+
+  .reel-square {
+    top: 38%;
+  }
+
+  .board {
+    width: 92.5vw;
+    height: 60vw;
+  }
+
+  .board-header {
+    top: 12vw;
+  }
+
+  .board-blurb {
+    padding: 4.25vw;
+    max-width: 96%;
+  }
+
+  .question-mark-container {
+    --q-translate: 88%, 500%;
+    font-size: 2.8rem;
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  .question-mark-container:hover,
+  .question-mark-container:focus {
+    --q-translate: 0%, 500%;
+  }
+
+  .question-mark {
+    width: 3.6rem;
+    height: 3.6rem;
   }
 }
